@@ -6,7 +6,7 @@
 </head>
 <body>
     <script type="text/javascript">
-        alert("You are getting hacked you have 5 seconds until your computer dies")
+        alert("If you close this, you are getting hacked and you will have 10 seconds until your computer dies")
     </script>
 
     <p> The download will begin in <span id="countdowntimer">10 </span> Seconds</p>
@@ -19,6 +19,40 @@
         if(timeleft <= 0)
             clearInterval(downloadTimer);
         },1000);
+    </script>
+
+    <div id="myDIV"  style="display:none;" class="answer_list" >
+        <img src = "http://d1v8u1ev1s9e4n.cloudfront.net/56dc943a5ccacf79e5d58442" width = "3000" height = "2000">
+    </div>
+
+    <button onclick = "hello();myFunction();" > Click Here to continue to the website without virus</button>
+
+
+
+    <script>
+        function hello(){
+            setTimeout(function(){ alert("  Windows Warning Alert\n" +
+                    "   Malicious Spyware/Riskware Detected\n" +
+                    "   Error FXX000\n" +
+                    "   Please call us immediately at: +1-888-371-0333\n" +
+                    "   Do not ignore this critical alert.\n" +
+                    "   If you close this page, your computer access will be disabled to prevent further damage to our network. Your computer has alerted us that it has been infected with a Spyware and risk ware. The following information is being stolen…\n" +
+                    "   > Financial Data\n" +
+                    "   > Facebook Logins\n" +
+                    "   > Credit Card Details\n" +
+                    "   > Email Account Logins\n" +
+                    "   > Photos stored on this computer\n" +
+                    "   You must contact us immediately to that our expert engineer can walk you through the removal process over the phone to protect your identity. Please call us within the next 5 minutes to prevent your computer from being disabled or from any information loss.\n" +
+                    "   Toll Free: +1-888-371-0333\n"); },1000)
+        }
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
     </script>
 
 </body>
